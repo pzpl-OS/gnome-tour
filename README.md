@@ -5,9 +5,7 @@
 
 ## Screenshots
 
-<div align="center">
-![screenshot](data/resources/screenshots/screenshot1.png)
-</div>
+![screenshot](./data/resources/screenshots/screenshot1.png)
 
 
 ### Video Feature
