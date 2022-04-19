@@ -1,0 +1,213 @@
+# Polish translation for gnome-tour.
+# Copyright © 2020 the gnome-tour authors.
+# This file is distributed under the same license as the gnome-tour package.
+# Piotr Drąg <piotrdrag@gmail.com>, 2020.
+# Aviary.pl <community-poland@mozilla.org>, 2020.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-tour\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
+"POT-Creation-Date: 2020-08-18 16:59+0000\n"
+"PO-Revision-Date: 2020-08-22 15:33+0200\n"
+"Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
+"Language-Team: Polish <community-poland@mozilla.org>\n"
+"Language: pl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2;\n"
+
+#: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
+msgid "Tour"
+msgstr "Przewodnik"
+
+#: data/org.gnome.Tour.desktop.in.in:4
+msgid "Greeter & Tour"
+msgstr "Ekran powitalny i przewodnik"
+
+#: data/org.gnome.Tour.desktop.in.in:9
+msgid "Gnome;GTK;"
+msgstr "GNOME;GTK;"
+
+#: data/org.gnome.Tour.metainfo.xml.in.in:8
+msgid "GNOME Tour and Greeter."
+msgstr "Przewodnik po GNOME i ekran powitalny"
+
+#: data/org.gnome.Tour.metainfo.xml.in.in:10
+msgid "A guided tour and greeter for GNOME."
+msgstr "Przewodnik po środowisku GNOME i ekran powitalny."
+
+#: data/org.gnome.Tour.metainfo.xml.in.in:15
+msgid "Main Window"
+msgstr "Główne okno"
+
+#: data/org.gnome.Tour.metainfo.xml.in.in:34
+msgid "The GNOME Project"
+msgstr "Projekt GNOME"
+
+#. Translators: The following string is formated as "Welcome to GNOME 3.36" for example
+#: src/widgets/pages/welcome.rs:145
+msgid "Welcome to {} {}"
+msgstr "Witamy w systemie {} {}"
+
+#: src/widgets/pages/welcome.rs:151
+msgid ""
+"Hi there! Take the tour to learn your way around and discover essential "
+"features."
+msgstr ""
+"Cześć! Ten przewodnik pomoże Ci zacząć pracę i poznać niezbędne funkcje."
+
+#: src/widgets/pages/welcome.rs:161
+msgid "_No Thanks"
+msgstr "_Nie, dziękuję"
+
+#: src/widgets/pages/welcome.rs:169
+msgid "_Start Tour"
+msgstr "_Rozpocznij przewodnik"
+
+#: src/widgets/paginator.rs:31
+msgid "_Next"
+msgstr "_Dalej"
+
+#: src/widgets/paginator.rs:32
+msgid "_Close"
+msgstr "Za_mknij"
+
+#: src/widgets/paginator.rs:33
+msgid "_Previous"
+msgstr "_Wstecz"
+
+#: src/widgets/window.rs:50
+msgid "Open Activities to launch apps"
+msgstr "Otwórz „Podgląd”, aby uruchamiać programy"
+
+#: src/widgets/window.rs:51
+msgid "The activities view can also be used to switch windows and search."
+msgstr ""
+"Ekran podglądu można używać także do przełączania okien i wyszukiwania."
+
+#: src/widgets/window.rs:60
+msgid "Just type to search"
+msgstr "Zacznij pisać, aby wyszukać"
+
+#: src/widgets/window.rs:61
+msgid ""
+"In the activities view, just start typing to search for apps, settings and "
+"more."
+msgstr ""
+"Zacznij pisać na ekranie podglądu, aby znaleźć programy, ustawienia i nie "
+"tylko."
+
+#: src/widgets/window.rs:70
+msgid "Click the time to see notifications"
+msgstr "Kliknij zegar, aby zobaczyć powiadomienia"
+
+#: src/widgets/window.rs:71
+msgid "The notifications popover also includes personal planning tools."
+msgstr "Obszar powiadomień zawiera także narzędzia do planowania dnia."
+
+#: src/widgets/window.rs:80
+msgid "View system information and settings"
+msgstr "Wyświetl informacje o komputerze i ustawienia"
+
+#: src/widgets/window.rs:81
+msgid "Get an overview of the system status and quickly change settings."
+msgstr "Rzuć okiem na stan systemu i szybko zmieniaj ustawienia."
+
+#: src/widgets/window.rs:90
+msgid "Use Software to find and install apps"
+msgstr "Użyj Menedżera oprogramowania do wyszukiwania i instalowania programów"
+
+#: src/widgets/window.rs:91
+msgid "Discover great apps through search, browsing and our recommendations."
+msgstr ""
+"Odkrywaj świetne programy za pomocą wyszukiwarki, przeglądarki i naszych "
+"rekomendacji."
+
+#. Translators: The following string is formated as "We hope that you enjoy GNOME"
+#: src/widgets/window.rs:101
+msgid "That's it! We hope that you enjoy {}."
+msgstr ""
+"Wszystko gotowe! Mamy nadzieję, że korzystanie z systemu {} przyniesie "
+"radość."
+
+#: src/widgets/window.rs:102
+msgid "To get more advice and tips, see the Help app."
+msgstr "Program „Pomoc” zawiera więcej porad i wskazówek."
+
+msgid "Install"
+msgstr "Zainstaluj"
+
+msgid "Installed"
+msgstr "Zainstalowano"
+
+msgid "Works best with"
+msgstr "Działa najlepiej z"
+
+msgid "Open the menu to launch apps"
+msgstr "Otwórz menu, aby uruchomić aplikację"
+
+msgid "You can search for apps and find shortcuts to common locations in the menu."
+msgstr "Możesz wyszukiwać aplikacje oraz skróty częstych miejsc bezpośrednio w menu."
+
+msgid "Choose your desktop look with Zorin Appearance"
+msgstr "Użyj Zorin Appearance, ab wybrać wygląd pulpitu"
+
+msgid "Select a different layout for your desktop and change its visual style."
+msgstr "Wybierz inny styl dla pulpitu i zmień wygląd wizualny."
+
+msgid "Install VM Tools for VMware"
+msgstr "Zainstaluj dodatki VM Tools dla VMware"
+
+msgid "Install Guest Additions for VirtualBox"
+msgstr "Zainstaluj dodatki gościa w VirtualBox"
+
+msgid "Speed-up your Virtual Machine"
+msgstr "Przyspiesz swoją maszynę wirtualną"
+
+msgid "Zorin OS has detected that you're using a Virtual Machine."
+msgstr "Zorin OS wykrył, że korzystasz z maszyny wirtualnej."
+
+msgid "To improve performance, install the extensions for your virtualization software and restart the system."
+msgstr "Aby zwiększyć wydajność zainstaluj rozszerzenia wirtualizacji i zresetuj system."
+
+msgid "Speed may be limited in a Virtual Machine"
+msgstr "Prędkość może być ograniczona na wirtualnej maszynie"
+
+msgid "For the best experience and performance, please install Zorin OS directly onto your computer."
+msgstr "Aby osiągnąć najlepszą wydajność zainstaluj Zorin OS bezpośrednio na swoim komputerze."
+
+msgid "Connect your online accounts"
+msgstr "Połącz swoje konta online"
+
+msgid "Sync your accounts to easily access your online calendar, documents, photos, and more."
+msgstr "Synchronizuj swoje konta, aby uzyskać dostęp do kalendarzy, dokumentów, zdjęć i innych danych dostępnych online."
+
+msgid "Connect Online Accounts"
+msgstr "Połącz konta online"
+
+msgid "Link your phone and computer with Zorin Connect"
+msgstr "Połącz swój telefon z komputerem wykorzystując narzędzie Zorin Connect"
+
+msgid "Integrate your devices to sync notifications, reply to messages on the desktop, share files, use your phone as a remote control for your computer, and more."
+msgstr "Synchronizuj powiadomienia, odpowiadaj na wiadomości, dziel pliki, wykorzystuj swój telefon jako pilot do komputera i jeszcze więcej."
+
+msgid "Learn More about Installing Apps"
+msgstr "Dowiedz się więcej o instalowaniu aplikacji"
+
+msgid "Office suite for work"
+msgstr "Pakiet biurowy do pracy"
+
+msgid "Choose the office suite that works best with the documents you use. Both office suites are compatible with Microsoft Office documents and other formats."
+msgstr "Wybierz pakiet który najlepiej pracuje z dokumentami których używasz. Obydwa pakiety są kompatybilne z dokumentami Microsoft Office oraz z innymi formatami."
+
+msgid "To get more advice and tips, see the Help page on our website."
+msgstr "Aby znaleźć więcej wskazówek, sprawdź stronę pomocy na stronie internetowej."
+
+msgid "Visit the Help page"
+msgstr "Odwiedź stronę pomocy"
+
+msgid "Launch"
+msgstr "Uruchom"

@@ -1,0 +1,123 @@
+Build started at 2022-04-15T12:36:43.123503
+Main binary: /usr/bin/python3
+Build Options: 
+Python system: Linux
+The Meson build system
+Version: 0.53.2
+Source dir: /home/piotr/Dokumenty/develop/lubochbuntu/gnome-tour/gnome-tour-3.38.0
+Build dir: /home/piotr/Dokumenty/develop/lubochbuntu/gnome-tour/gnome-tour-3.38.0/patch
+Build type: native build
+Project name: gnome-tour
+Project version: 3.38.0
+No CFLAGS in the environment, not changing global flags.
+No LDFLAGS in the environment, not changing global flags.
+No CPPFLAGS in the environment, not changing global flags.
+No RUSTFLAGS in the environment, not changing global flags.
+No LDFLAGS in the environment, not changing global flags.
+Rust compiler for the build machine: rustc (rustc 1.57.0)
+Rust linker for the build machine: rustc ld.bfd 2.34
+No CFLAGS in the environment, not changing global flags.
+No LDFLAGS in the environment, not changing global flags.
+No CPPFLAGS in the environment, not changing global flags.
+No RUSTFLAGS in the environment, not changing global flags.
+No LDFLAGS in the environment, not changing global flags.
+Rust compiler for the host machine: rustc (rustc 1.57.0)
+Rust linker for the host machine: rustc ld.bfd 2.34
+Build machine cpu family: x86_64
+Build machine cpu: x86_64
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Target machine cpu family: x86_64
+Target machine cpu: x86_64
+Pkg-config binary for MachineChoice.HOST is not cached.
+Pkg-config binary missing from cross or native file, or env var undefined.
+Trying a default pkg-config fallback at pkg-config
+Trying pkg-config binary pkg-config for machine MachineChoice.HOST at ['/usr/bin/pkg-config']
+Found pkg-config: /usr/bin/pkg-config (0.29.1)
+Determining dependency 'glib-2.0' with pkg-config executable '/usr/bin/pkg-config'
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config --modversion glib-2.0` -> 0
+2.64.6
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config --cflags glib-2.0` -> 0
+-I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config glib-2.0 --libs` -> 0
+-L/usr/lib/x86_64-linux-gnu -lglib-2.0
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config glib-2.0 --libs` -> 0
+-lglib-2.0
+Run-time dependency glib-2.0 found: YES 2.64.6
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'gio-2.0' with pkg-config executable '/usr/bin/pkg-config'
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config --modversion gio-2.0` -> 0
+2.64.6
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config --cflags gio-2.0` -> 0
+-pthread -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config gio-2.0 --libs` -> 0
+-L/usr/lib/x86_64-linux-gnu -lgio-2.0 -lgobject-2.0 -lglib-2.0
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config gio-2.0 --libs` -> 0
+-lgio-2.0 -lgobject-2.0 -lglib-2.0
+Run-time dependency gio-2.0 found: YES 2.64.6
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'gdk-pixbuf-2.0' with pkg-config executable '/usr/bin/pkg-config'
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config --modversion gdk-pixbuf-2.0` -> 0
+2.40.0
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config --cflags gdk-pixbuf-2.0` -> 0
+-pthread -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config gdk-pixbuf-2.0 --libs` -> 0
+-L/usr/lib/x86_64-linux-gnu -lgdk_pixbuf-2.0 -lgobject-2.0 -lglib-2.0
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config gdk-pixbuf-2.0 --libs` -> 0
+-lgdk_pixbuf-2.0 -lgobject-2.0 -lglib-2.0
+Run-time dependency gdk-pixbuf-2.0 found: YES 2.40.0
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'gtk+-3.0' with pkg-config executable '/usr/bin/pkg-config'
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config --modversion gtk+-3.0` -> 0
+3.24.20
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config --cflags gtk+-3.0` -> 0
+-pthread -I/usr/include/gtk-3.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/x86_64-linux-gnu/dbus-1.0/include -I/usr/include/gtk-3.0 -I/usr/include/gio-unix-2.0 -I/usr/include/cairo -I/usr/include/pango-1.0 -I/usr/include/fribidi -I/usr/include/harfbuzz -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/uuid -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config gtk+-3.0 --libs` -> 0
+-L/usr/lib/x86_64-linux-gnu -lgtk-3 -lgdk-3 -lpangocairo-1.0 -lpango-1.0 -lharfbuzz -latk-1.0 -lcairo-gobject -lcairo -lgdk_pixbuf-2.0 -lgio-2.0 -lgobject-2.0 -lglib-2.0
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config gtk+-3.0 --libs` -> 0
+-lgtk-3 -lgdk-3 -lpangocairo-1.0 -lpango-1.0 -lharfbuzz -latk-1.0 -lcairo-gobject -lcairo -lgdk_pixbuf-2.0 -lgio-2.0 -lgobject-2.0 -lglib-2.0
+Run-time dependency gtk+-3.0 found: YES 3.24.20
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'libhandy-1' with pkg-config executable '/usr/bin/pkg-config'
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config --modversion libhandy-1` -> 1
+
+CMake binary for MachineChoice.HOST is not cached
+CMake binary missing from cross or native file, or env var undefined.
+Trying a default CMake fallback at cmake
+Trying CMake binary cmake for machine MachineChoice.HOST at ['/usr/bin/cmake']
+Found CMake: /usr/bin/cmake (3.16.3)
+Extracting basic cmake information
+Try CMake generator: auto
+No CFLAGS in the environment, not changing global flags.
+No LDFLAGS in the environment, not changing global flags.
+No CPPFLAGS in the environment, not changing global flags.
+No CXXFLAGS in the environment, not changing global flags.
+No LDFLAGS in the environment, not changing global flags.
+No CPPFLAGS in the environment, not changing global flags.
+Failed to find a fortran compiler for CMake. This might cause CMake to fail.
+Called `/usr/bin/cmake --trace-expand .` in /home/piotr/Dokumenty/develop/lubochbuntu/gnome-tour/gnome-tour-3.38.0/patch/meson-private/cmake_libhandy-1 -> 0
+  -- Module search paths:    ['/', '/opt', '/usr', '/usr/local']
+  -- CMake root:             /usr/share/cmake-3.16
+  -- CMake architectures:    ['i386-linux-gnu', 'x86_64-linux-gnu']
+  -- CMake lib search paths: ['lib', 'lib32', 'lib64', 'libx32', 'share', 'lib/i386-linux-gnu', 'lib/x86_64-linux-gnu']
+Preliminary CMake check failed. Aborting.
+Run-time dependency libhandy-1 found: NO (tried pkgconfig and cmake)
+
+meson.build:15:0: ERROR: Dependency "libhandy-1" not found, tried pkgconfig and cmake

@@ -1,0 +1,45 @@
+.large-title {
+  font-weight: 300;
+  font-size: 24pt;
+  letter-spacing: 0.2rem;
+}
+
+.page-title {
+  font-weight: 600;
+  font-size: 20pt;
+}
+
+.page-body {
+  font-weight: 400;
+  font-size: 12pt;
+}
+
+.video {
+  opacity: 0;
+}
+
+.video.playing {
+  opacity: 1;
+  transition-property: opacity;
+  transition-duration: 250ms;
+  transition-timing-function: ease-in-out;
+}
+
+.last-page .page-title, .last-page .page-body {
+  color: white;
+}
+
+.app-title {
+  font-weight: 700;
+  font-size: 12pt;
+}
+
+.background,
+headerbar {
+  background-color: #f3f3f9;
+  color: #123354;
+}
+
+.last-page {
+  background: linear-gradient(to bottom, #262757, #3b6ba5);
+}

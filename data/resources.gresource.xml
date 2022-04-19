@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gresources>
+  <gresource prefix="/org/gnome/Tour/">
+      <file compressed="true" alias="style.css">resources/style.css</file>
+      <file compressed="true" alias="activities.svg">resources/assets/activities.svg</file>
+      <file compressed="true" alias="calendar.svg">resources/assets/calendar.svg</file>
+      <file compressed="true" alias="search.svg">resources/assets/search.svg</file>
+      <file compressed="true" alias="software.svg">resources/assets/software.svg</file>
+      <file compressed="true" alias="status-menu.svg">resources/assets/status-menu.svg</file>
+      <file compressed="true" alias="ready-to-go.svg">resources/assets/ready-to-go.svg</file>
+      <file compressed="true" alias="office.svg">resources/assets/office.svg</file>
+      <file compressed="true" alias="online-accounts.svg">resources/assets/online-accounts.svg</file>
+      <file compressed="true" alias="virtual-machine.svg">resources/assets/virtual-machine.svg</file>
+      <file compressed="true" alias="zorin-appearance.svg">resources/assets/zorin-appearance.svg</file>
+      <file compressed="true" alias="zorin-connect.svg">resources/assets/zorin-connect.svg</file>
+      <file compressed="true" alias="zorin-menu.svg">resources/assets/zorin-menu.svg</file>
+      <file compressed="true" alias="zorin-os-software.svg">resources/assets/zorin-os-software.svg</file>
+  </gresource>
+</gresources>
