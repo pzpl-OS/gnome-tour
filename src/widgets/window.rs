@@ -185,7 +185,7 @@ impl Window {
                 "/org/gnome/Tour/zorin-os-software.svg",
                 "Użyj Menedżera oprogramowania do wyszukiwania i instalowania programów".to_string(),
                 "Odkrywaj świetne programy za pomocą wyszukiwarki, przeglądarki i naszych ".to_string(),
-                vec![(format!("{} {}", "Otwórz", "Menedżer oprogramowania"), "gnome-software", ""), (format!("{}", gettext("Learn More about Installing Apps")), "xdg-open", "https://help.zorin.com/docs/apps-games/install-apps/")],
+                vec![(format!("{} {}", "Otwórz", "Menedżer oprogramowania"), "gnome-software", ""), (format!("{}", gettext("Dowiedz się więcej o instalowaniu aplikacji")), "xdg-open", "https://help.zorin.com/docs/apps-games/install-apps/")],
             )
             .widget
             .upcast::<gtk::Widget>(),
@@ -227,8 +227,8 @@ impl Window {
             "/org/gnome/Tour/ready-to-go.svg",
             // Translators: The following string is formated as "We hope that you enjoy GNOME"
             i18n_f("Wszystko gotowe! Mamy nadzieję, że korzystanie z systemu {} przyniesie Ci radość.", &[&name]),
-            gettext("To get more advice and tips, see the Help page on our website."),
-            vec![(format!("{}", gettext("Visit the Help page")), "xdg-open", "https://help.zorin.com")],
+            gettext("Program „Pomoc” zawiera więcej porad i wskazówek."),
+            vec![(format!("{}", gettext("Odwiedź stronę pomocy")), "xdg-open", "https://pzpl.ovh/os/redir.php?target=gnometour_help&v=delft")],
         );
         last_page.widget.get_style_context().add_class("last-page");
         self.paginator.borrow_mut().add_page(last_page.widget.upcast::<gtk::Widget>());
