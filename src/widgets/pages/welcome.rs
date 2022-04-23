@@ -142,13 +142,13 @@ impl WelcomePageWidget {
         let name = glib::get_os_info("NAME").unwrap_or_else(|| "GNOME".into());
         let version = glib::get_os_info("VERSION").unwrap_or_else(|| "".into());
         // Translators: The following string is formated as "Welcome to GNOME 3.36" for example
-        let title = gtk::Label::new(Some(&i18n_f("Welcome to {} {}", &[&name, &version])));
+        let title = gtk::Label::new(Some(&i18n_f("Witamy w {} {}", &[&name, &version])));
         title.set_margin_top(36);
         title.get_style_context().add_class("large-title");
         title.show();
         container.add(&title);
 
-        let text = gtk::Label::new(Some(&gettext("Hi there! Take the tour to learn your way around and discover essential features.")));
+        let text = gtk::Label::new(Some(&gettext("Cześć! Ten przewodnik pomoże Ci zacząć pracę i poznać niezbędne funkcje.")));
         text.get_style_context().add_class("body");
         text.set_margin_top(12);
         text.show();
@@ -158,7 +158,7 @@ impl WelcomePageWidget {
         actions_container.set_halign(gtk::Align::Center);
         actions_container.set_margin_top(36);
 
-        let skip_tour_btn = gtk::Button::with_label(&gettext("_No Thanks"));
+        let skip_tour_btn = gtk::Button::with_label("_Nie, dziękuję.");
         skip_tour_btn.set_property_height_request(40);
         skip_tour_btn.set_property_width_request(180);
         skip_tour_btn.set_use_underline(true);
@@ -166,7 +166,7 @@ impl WelcomePageWidget {
         skip_tour_btn.show();
         actions_container.add(&skip_tour_btn);
 
-        let start_tour_btn = gtk::Button::with_label(&gettext("_Start Tour"));
+        let start_tour_btn = gtk::Button::with_label(&gettext("_Rozpocznij przewodnik"));
         start_tour_btn.set_property_height_request(40);
         start_tour_btn.set_property_width_request(180);
         start_tour_btn.set_use_underline(true);

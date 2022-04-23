@@ -79,8 +79,8 @@ impl Window {
         self.paginator.borrow_mut().add_page(
             ImagePageWidget::new(
                 "/org/gnome/Tour/zorin-menu.svg",
-                gettext("Open the menu to launch apps"),
-                gettext("You can search for apps and find shortcuts to common locations in the menu."),
+                "Otwórz menu, aby uruchamiać programy".to_string(),
+                gettext("Możesz szukać aplikacji i skrótów do często używanych lokalizacji w menu."),
             )
             .widget
             .upcast::<gtk::Widget>(),
@@ -101,8 +101,8 @@ impl Window {
                 self.paginator.borrow_mut().add_page(
                     ImageButtonPageWidget::new(
                         "/org/gnome/Tour/zorin-appearance.svg",
-                        gettext("Choose your desktop look with Zorin Appearance"),
-                        gettext("Select a different layout for your desktop and change its visual style."),
+                        "Zmień wygląd swojego pulpitu dzięki Zorin Appearance".to_string(),
+                        "Zmień ułożenie pulpitu i jego styl wizualny.".to_string(),
                         vec![(format!("{} {}", gettext("Launch"), gettext("Zorin Appearance")), "zorin-appearance", "")],
                     )
                     .widget
@@ -115,15 +115,15 @@ impl Window {
             if virtual_machine.contains("oracle") || virtual_machine.contains("vmware") {
                     let vm_button: (String, &'static str, &'static str);
                     if virtual_machine.contains("vmware") {
-                            vm_button = (format!("{}", gettext("Install VM Tools for VMware")), "apturl", "apt:open-vm-tools-desktop");
+                            vm_button = (format!("{}", "Zainstaluj VM Tools dla VMware"), "apturl", "apt:open-vm-tools-desktop");
                     } else {
-                            vm_button = (format!("{}", gettext("Install Guest Additions for VirtualBox")), "apturl", "apt:zorin-virtualbox-guest-additions");
+                            vm_button = (format!("{}", "Zainstaluj Guest Additions dla VirtualBox"), "apturl", "apt:zorin-virtualbox-guest-additions");
                     }
                     self.paginator.borrow_mut().add_page(
                         ImageButtonPageWidget::new(
                             "/org/gnome/Tour/virtual-machine.svg",
-                            gettext("Speed-up your Virtual Machine"),
-                            format!("{} {}", gettext("Zorin OS has detected that you're using a Virtual Machine."), gettext("To improve performance, install the extensions for your virtualization software and restart the system.")),
+                            "Przyśpiesz swoją maszynę wirtualną".to_string(),
+                            format!("{} {}", "pzpl OS wykrył, że korzystasz z maszyny wirtualnej. ", "Aby zwiększyć wydajność, zainstaluj dodatki dla twojej maszyny wirtualnej i zrestartuj system."),
                             vec![vm_button],
                         )
                         .widget
@@ -133,8 +133,8 @@ impl Window {
                     self.paginator.borrow_mut().add_page(
                         ImagePageWidget::new(
                             "/org/gnome/Tour/virtual-machine.svg",
-                            gettext("Speed may be limited in a Virtual Machine"),
-                            format!("{} {}", gettext("Zorin OS has detected that you're using a Virtual Machine."), gettext("For the best experience and performance, please install Zorin OS directly onto your computer.")),
+                            "Szybkość może być ograniczona w maszynie wirtualnej".to_string(),
+                            format!("{} {}", "pzpl OS wykrył, że korzystasz z maszyny wirtualnej. ", gettext("Dla najlepszego doświadczenia, zainstaluj Zorin OS bezpośrednio na swój komputer.")),
                         )
                         .widget
                         .upcast::<gtk::Widget>(),
@@ -147,9 +147,9 @@ impl Window {
             self.paginator.borrow_mut().add_page(
                 ImageButtonPageWidget::new(
                     "/org/gnome/Tour/online-accounts.svg",
-                    gettext("Connect your online accounts"),
-                    gettext("Sync your accounts to easily access your online calendar, documents, photos, and more."),
-                    vec![(format!("{}", gettext("Connect Online Accounts")), "gnome-control-center", "online-accounts")],
+                    "Połącz swoje internetowe konta".to_string(),
+                    gettext("Połącz swoje konta aby w łatwy sposób korzystać ze swoich kalendarzy online, zdjęć, dokumentów i nie tylko."),
+                    vec![(format!("{}", "Połącz konta online"), "gnome-control-center", "online-accounts")],
                 )
                 .widget
                 .upcast::<gtk::Widget>(),
@@ -170,9 +170,9 @@ impl Window {
                         self.paginator.borrow_mut().add_page(
                             ImageButtonPageWidget::new(
                                 "/org/gnome/Tour/zorin-connect.svg",
-                                gettext("Link your phone and computer with Zorin Connect"),
-                                gettext("Integrate your devices to sync notifications, reply to messages on the desktop, share files, use your phone as a remote control for your computer, and more."),
-                                vec![(format!("{} {}", gettext("Launch"), gettext("Zorin Connect")), "zorin-connect", "")],
+                                "Połącz swój telefon z komputerem wykorzystując narzędzie Zorin Connect".to_string(),
+                                "Synchronizuj powiadomienia, odpowiadaj na wiadomości, dziel pliki, wykorzystuj swój telefon jako pilot do komputera i jeszcze więcej.".to_string(),
+                                vec![(format!("{} {}", "Otwórz", "Zorin Connect"), "zorin-connect", "")],
                             )
                             .widget
                             .upcast::<gtk::Widget>(),
@@ -183,9 +183,9 @@ impl Window {
         self.paginator.borrow_mut().add_page(
             ImageButtonPageWidget::new(
                 "/org/gnome/Tour/zorin-os-software.svg",
-                gettext("Use Software to find and install apps"),
-                gettext("Discover great apps through search, browsing and our recommendations."),
-                vec![(format!("{} {}", gettext("Launch"), gettext("Software")), "gnome-software", ""), (format!("{}", gettext("Learn More about Installing Apps")), "xdg-open", "https://help.zorin.com/docs/apps-games/install-apps/")],
+                "Użyj Menedżera oprogramowania do wyszukiwania i instalowania programów".to_string(),
+                "Odkrywaj świetne programy za pomocą wyszukiwarki, przeglądarki i naszych ".to_string(),
+                vec![(format!("{} {}", "Otwórz", "Menedżer oprogramowania"), "gnome-software", ""), (format!("{}", gettext("Learn More about Installing Apps")), "xdg-open", "https://help.zorin.com/docs/apps-games/install-apps/")],
             )
             .widget
             .upcast::<gtk::Widget>(),
@@ -197,8 +197,8 @@ impl Window {
                  self.paginator.borrow_mut().add_page(
                     OfficeSuitesPageWidget::new(
                         "/org/gnome/Tour/office.svg",
-                        gettext("Office suite for work"),
-                        gettext("Choose the office suite that works best with the documents you use. Both office suites are compatible with Microsoft Office documents and other formats."),
+                        "Pakiet biurowy do pracy".to_string(),
+                        "Wybierz pakiet który najlepiej pracuje z dokumentami których używasz. Obydwa pakiety są kompatybilne z dokumentami Microsoft Office oraz z innymi formatami.".to_string(),
                     )
                     .widget
                     .upcast::<gtk::Widget>(),
@@ -226,7 +226,7 @@ impl Window {
         let last_page = ImageButtonPageWidget::new(
             "/org/gnome/Tour/ready-to-go.svg",
             // Translators: The following string is formated as "We hope that you enjoy GNOME"
-            i18n_f("That's it! We hope that you enjoy {}.", &[&name]),
+            i18n_f("Wszystko gotowe! Mamy nadzieję, że korzystanie z systemu {} przyniesie Ci radość.", &[&name]),
             gettext("To get more advice and tips, see the Help page on our website."),
             vec![(format!("{}", gettext("Visit the Help page")), "xdg-open", "https://help.zorin.com")],
         );

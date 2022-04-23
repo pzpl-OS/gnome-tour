@@ -28,9 +28,9 @@ impl PaginatorWidget {
             carousel: libhandy::Carousel::new(),
             carousel_dots: libhandy::CarouselIndicatorDots::new(),
             headerbar: libhandy::HeaderBar::new(),
-            next_btn: gtk::Button::with_label(&gettext("_Next")),
-            close_btn: gtk::Button::with_label(&gettext("_Close")),
-            previous_btn: gtk::Button::with_label(&gettext("_Previous")),
+            next_btn: gtk::Button::with_label("_Dalej"),
+            close_btn: gtk::Button::with_label("Za_mknij"),
+            previous_btn: gtk::Button::with_label("_Wstecz"),
             pages: RefCell::new(Vec::new()),
             current_page: RefCell::new(0),
         });

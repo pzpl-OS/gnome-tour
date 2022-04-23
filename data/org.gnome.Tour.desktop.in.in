@@ -1,6 +1,6 @@
 [Desktop Entry]
-Name=Tour
-GenericName=Greeter & Tour
+Name=Przewodnik
+GenericName=Ekran powitalny i przewodnik
 Type=Application
 Exec=gnome-tour
 Terminal=false

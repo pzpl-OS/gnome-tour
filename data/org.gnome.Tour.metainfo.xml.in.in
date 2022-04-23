@@ -5,14 +5,14 @@
   <metadata_license>CC0</metadata_license>
   <project_license>GPL-3.0+</project_license>
   <name>Tour</name>
-  <summary>GNOME Tour and Greeter.</summary>
+  <summary>Przewodnik po GNOME i ekran powitalny</summary>
   <description>
-    <p>A guided tour and greeter for GNOME.</p>
+    <p>Przewodnik po środowisku GNOME i ekran powitalny</p>
   </description>
   <screenshots>
       <screenshot type="default">
         <image>https://gitlab.gnome.org/GNOME/gnome-tour/raw/master/data/resources/screenshots/screenshot1.png</image>
-        <caption>Main Window</caption>
+        <caption>Główne okno</caption>
       </screenshot>
   </screenshots>
   <url type="homepage">https://gitlab.gnome.org/GNOME/gnome-tour</url>
@@ -35,7 +35,7 @@
   </kudos>
   <project_group>GNOME</project_group>
   <compulsory_for_desktop>GNOME</compulsory_for_desktop>
-  <developer_name>The GNOME Project</developer_name>
+  <developer_name>Projekt GNOME</developer_name>
   <update_contact>bilal.elmoussaoui@gnome.org</update_contact>
   <translation type="gettext">@gettext-package@</translation>
   <launchable type="desktop-id">@app-id@.desktop</launchable>
